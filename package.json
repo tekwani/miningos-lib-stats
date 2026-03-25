@@ -1,18 +1,29 @@
 {
-  "name": "miningos-lib-stats",
-  "version": "0.0.1",
+  "name": "@tetherto/miningos-lib-stats",
+  "version": "1.0.0",
   "description": "MiningOS Lib Stats",
+  "main": "index.js",
   "keywords": [
     "tether"
   ],
   "author": "Tether",  
   "license": "Apache-2.0",
-  "engine": {
-    "node": ">=20.0"
+  "engines": {
+    "node": ">=20"
   },
+  "files": [
+    "index.js",
+    "utils.js",
+    "ops/"
+  ],
+  "type": "commonjs",  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tetherto/miningos-lib-stats.git"
+  },
+  "homepage": "https://github.com/tetherto/miningos-lib-stats#readme",
+  "bugs": {
+    "url": "https://github.com/tetherto/miningos-lib-stats/issues"
   },
   "scripts": {
     "lint": "standard",
@@ -20,8 +31,6 @@
     "test": "npm run lint && npm run test:unit",
     "test:unit": "brittle tests/unit/*.js",
     "test:coverage": "brittle --coverage tests/unit/*.test.js"
-  },
-  "dependencies": {
   },
   "devDependencies": {
     "brittle": "3.16.3",
